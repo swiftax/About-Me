@@ -109,7 +109,11 @@ section > h1 {
 }
 
 
-
+@media only screen and (max-width: 500px) {
+    .masthead-heading {
+        font-size: 3em;
+    }
+}
 /*
 Key Positioning and Layout Take-aways:
 -Use appropriate HTML tags to incorporate "Semantic HTML".
