@@ -1,0 +1,127 @@
+/*
+-   letter-spacing: Defines the tracking between subsequent letters in words. A negative value for letter-spacing makes letters closer together. 
+	A positive value makes them farther apart.
+-   font-weight: Defines the weight of the font. Choices include bold, bolder, light, as well as numerical values that are defined 
+	by each typeface for fine-grained control.
+-   text-transform: Controls special features about text display. In this case, it's used to make all letters uppercase.
+
+*/
+
+
+
+body {
+	/* Typography Declarations */
+	color: #222;
+	font-size: 1em;
+	font-family: "Open Sans", "Helvetica Neue", Sans-serif;
+}
+
+.content-footer,
+.masthead-heading,
+.masthead-intro {
+  text-align: center;
+}
+
+.masthead {
+  padding: 6em 0;
+  background-image: url('https://download.unsplash.com/photo-1420819453217-57b6badd9e19');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top: solid 1em #fefefe;
+}
+
+.masthead-intro {
+/* Layout Declarations */
+  margin-bottom: 0.1em;
+ /* Typography Declarations */
+  font-family: "Open Sans", "Helvetica Neue", Sans-serif;
+  font-size: 2em;
+}
+
+.masthead-heading {
+/* Layout Declarations */	
+  margin-top: -0.2em;
+  	/* Typography Declarations */
+  font-family: "Open Sans", "Helvetica Neue", Sans-serif;
+  font-weight: bold;
+  font-size: 6em;
+  letter-spacing: -0.02;
+  text-transform: uppercase;  
+}
+
+.content-footer,
+.introduction-section,
+.location-section,
+.questions-section {
+	max-width: 38em; /* equals 38em * 16 = 608 1 em = 16pt font size */
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2em;
+}
+
+.introduction-section > p, 
+.location-section > p, 
+.content-footer > p {
+	/* Typography Declarations */
+	font-weight: 300;
+	letter-spacing: 0.05em; 
+}
+
+.questions-section > h2 {
+	font-family: "Gentium Book Basic", Georgia, serif;
+	font-size: 1.2em;
+	font-weight: bold;
+/* layout */
+margin: 2em 0 1em 0;
+}
+
+section > h1 {
+	margin-top: 2em;
+}
+
+/* inline block allows the links to list on the same line*/
+
+
+.social > li {
+	display: inline-block;
+	background-color: #fefefe;
+	padding: 0.75em;
+}
+
+.social > li > a {
+	text-decoration: none;
+	color: #fefefe;
+	font-weight: 900;
+	text-shadow: 0 .5em 0.2em #000;
+}
+
+.content-footer > p {
+	color: white;
+	background-color: #473424;
+}
+
+.content-footer > p > a{
+	color: #fefefe;
+}
+
+.content-footer > ul > li {
+	background-color: #665d48;
+}
+
+
+
+/*
+Key Positioning and Layout Take-aways:
+-Use appropriate HTML tags to incorporate "Semantic HTML".
+-Use "classes" to link specific HTML elements to CSS selectors.
+-Stack several CSS classes into one selector so they all have the same styles.
+-Target certain tags within a class by using the class > element selector, i.e. .social > li to target all of the list items within 
+the ".social" class.
+-Use display: inline-block; to have all the items within a list display in a single horizontal line.
+-Use "em" instead of any fixed measurements (pt, inches, etc.)
+-Although relative, 1 em is usually equivalent to 16pt font size
+-Each block level element has 3 levels of space around it -- 1) padding, 2) border, and 3) margin.
+-Make block elements bigger by adding padding to move the border out. (The text won't get bigger, but the border around the text will grow.)
+-Adjust margins to push other elements away from your element. Margins keep the border the same but add additional space.
+-The best way to center a section is to 1) define the section's width, 2) margin-right: auto;, and 3) margin-left: auto;.
+*/
