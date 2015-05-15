@@ -108,8 +108,11 @@ section > h1 {
 	background-color: #665d48;
 }
 
-
 @media only screen and (max-width: 500px) {
+    .masthead {
+    	padding: 3em 0;
+    }
+
     .masthead-heading {
         font-size: 3em;
     }
